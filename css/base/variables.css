@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #03A9F5;
+    --secondary-color: #ea1e63;
+
+    --main-color: #03A9F5;
+    --red-color: #ea1e63;
+}
+
+div{
+    background-color: var(--main-color);
+}
+footer {
+    background-color: var(--main-color);
+}
+
+.progress-bar {
+    background-color: var(--main-color);
+}
