@@ -1,7 +1,7 @@
 /* base */
-@import './base/reset.css';
-@import './base/variables.css';
-@import './base/layout.css';
+@import './reset.css';
+@import './variables.css';
+@import './layout.css';
 
 /* 3rd-party */
 
@@ -13,3 +13,11 @@
 @import './components/progress-bar.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
+
+.bg-primary {
+    background-color: var (--primary-color);
+}
+
+.bg-secondary {
+    background-color: var (--secondary-color);
+}

@@ -6,7 +6,7 @@
     --red-color: #ea1e63;
 }
 
-div{
+div {
     background-color: var(--main-color);
 }
 footer {
