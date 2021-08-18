@@ -1,4 +1,4 @@
-constsocialsData = [
+const socialsData = [
     {
        href: '#',
        icon: 'facebook', 
