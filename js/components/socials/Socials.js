@@ -1,7 +1,7 @@
 class Socials {
-    constructor(selector) {
+    constructor(selector, data) {
         this.selector = selector;
-        this.data = this.data;
+        this.data = data;
 
         this.DOM = null;
 
@@ -9,13 +9,13 @@ class Socials {
     }
 
     init() {
-        if (!this.isValidSelector()) ||
+        if (!this.isValidSelector() ||
             !this.isValidData() ||
             !this.findTargetElement()) {
             return false;
         }
 
-        this.render()
+        this.render();
     }
 
     isValidSelector() {
@@ -27,9 +27,10 @@ class Socials {
     }
 
     findTargetElement() {
-        this.Dom = document.querySelector(this.selector);
+        this.DOM = document.querySelector(this.selector);
         return !!this.DOM;
     }
+
     isValidDataItem(item) {
         return true;
     }
@@ -42,11 +43,11 @@ class Socials {
                 continue;
             }
 
-            HTML += <a href="${item.href}" target="_blank" class="fa fa-${item.icon}"></a>;
+            HTML += `<a href="${item.href}" target="_blank" class="fa fa-${item.icon}"></a>`;
         }
 
         this.DOM.innerHTML = HTML;
     }
 }
 
-export { Socials}
+export { Socials }

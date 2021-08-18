@@ -64,4 +64,4 @@ const progressBarData = [
     },
 ];
 
-export { progressBarData }S
+export { progressBarData }
